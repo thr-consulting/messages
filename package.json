@@ -1,8 +1,8 @@
 {
   "name": "messages",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Displays banner messages in the page.",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "prepublish": "npm run build",
@@ -27,29 +27,30 @@
     "chai": "^3.5.0",
     "chai-enzyme": "^0.6.1",
     "cheerio": "^0.22.0",
-    "enzyme": "^2.8.0",
+    "enzyme": "^2.8.2",
     "jsdom": "^9.12.0",
     "jsdom-global": "^2.1.1",
     "mocha": "^3.2.0",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
     "redux": "^3.6.0",
-	  "react-redux": "^5.0.3",
-    "semantic-ui-react": "^0.67.2",
-    "webpack": "^2.3.3",
+    "semantic-ui-react": "^0.68.0",
+    "webpack": "^2.4.1",
     "webpack-node-externals": "^1.5.4"
   },
   "peerDependencies": {
-    "react": "15.x",
-    "semantic-ui-react": "0.67.x",
-	  "redux": "3.x",
-	  "react-redux": "5.x"
+    "react": "^15.5.0",
+    "react-redux": "^5.0.0",
+    "redux": "^3.6.0",
+    "semantic-ui-react": "^0.68.0"
   },
   "dependencies": {
     "immutable": "^3.8.1",
+    "prop-types": "^15.5.8",
     "react-immutable-proptypes": "^2.1.0",
     "string-hash": "^1.1.3",
-    "tproptypes": "^0.1.3"
+    "tproptypes": "^0.1.5"
   }
 }
