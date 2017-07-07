@@ -1,6 +1,5 @@
-var webpack = require('webpack');
-var path = require('path');
-var nodeExternals = require('webpack-node-externals');
+import path from 'path';
+import nodeExternals from 'webpack-node-externals';
 
 const root = path.resolve(__dirname);
 
@@ -11,9 +10,9 @@ module.exports = {
 	externals: [nodeExternals()],
 	output: {
 		path: path.resolve(root, 'dist'),
-		filename: "index.js",
-		library: "messages",
-		libraryTarget: "umd"
+		filename: 'index.js',
+		library: 'messages',
+		libraryTarget: 'umd',
 	},
 	module: {
 		rules: [
@@ -28,13 +27,14 @@ module.exports = {
 							presets: [
 								['es2015', {loose: true, modules: false}],
 								'stage-1',
-								'react'
-							]
-						}
-					}
+								'react',
+								'flow',
+							],
+						},
+					},
 				],
 			},
-		]
+		],
 	},
 	plugins: [
 		// new webpack.optimize.UglifyJsPlugin({
