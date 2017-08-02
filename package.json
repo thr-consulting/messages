@@ -1,6 +1,6 @@
 {
   "name": "messages",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Displays banner messages in the page.",
   "main": "dist/index.js",
   "scripts": {
