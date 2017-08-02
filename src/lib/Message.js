@@ -38,7 +38,7 @@ MessageComponent.propTypes = {
 	message: PropTypes.shape({
 		id: PropTypes.string.isRequired,
 		level: PropTypes.string.isRequired,
-		message: PropTypes.onOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
+		message: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
 		title: PropTypes.string.isRequired,
 	}),
 };
