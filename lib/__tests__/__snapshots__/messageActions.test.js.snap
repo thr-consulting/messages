@@ -16,7 +16,7 @@ Object {
 exports[`Message Actions should return a message with a random id 1`] = `
 Object {
   "message": Object {
-    "id": "6cxbdd",
+    "id": "6cxbdd5i2eyhb420rudi",
     "level": "success",
     "message": "This is a message",
     "title": "This is a title",
