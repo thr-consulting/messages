@@ -1,6 +1,6 @@
 {
-  "name": "messages",
-  "version": "0.1.6",
+  "name": "@thx/messages",
+  "version": "1.0.0",
   "description": "Displays banner messages in the page.",
   "main": "dist/index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "flow": "flow",
     "lint": "eslint *.js lib",
     "docs": "jsdoc -c jsdoc.json",
+    "docs:md": "jsdoc2md -c jsdoc.json -f src/lib/*.js > docs/README.md",
     "docs:explain": "jsdoc -X -c jsdoc.json",
     "validate": "npm ls"
   },
@@ -41,46 +42,47 @@
     "babel-preset-stage-1": "^6.24.1",
     "enzyme": "^2.9.1",
     "enzyme-to-json": "^1.5.1",
-    "eslint": "^3.19.0",
+    "eslint": "^4.4.1",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-babel": "^4.1.2",
     "eslint-plugin-flowtype": "^2.35.0",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jest": "^20.0.3",
     "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-react": "^7.2.1",
     "flow-bin": "^0.52.0",
     "ink-docstrap": "^1.3.0",
     "jest": "^20.0.4",
-    "jsdoc": "^3.5.3",
+    "jsdoc": "^3.5.4",
     "jsdoc-babel": "^0.3.0",
+    "jsdoc-to-markdown": "^3.0.0",
     "precommit-hook-eslint": "^3.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-redux": "^5.0.5",
-    "react-scripts": "^1.0.10",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.0.10",
     "react-test-renderer": "^15.6.1",
     "redux": "^3.7.2",
-    "semantic-ui-react": "^0.71.3",
-    "webpack": "^3.4.1",
+    "semantic-ui-react": "^0.71.4",
+    "webpack": "^3.5.4",
     "webpack-node-externals": "^1.6.0"
   },
   "peerDependencies": {
     "react": "^15.5.0",
     "react-redux": "^5.0.0",
     "redux": "^3.7.0",
-    "semantic-ui-react": "^0.71.3"
+    "semantic-ui-react": "^0.71.4"
   },
   "dependencies": {
     "immutable": "^3.8.1",
     "prop-types": "^15.5.10",
     "react-immutable-proptypes": "^2.1.0",
-    "string-hash": "^1.1.3",
-    "tproptypes": "^0.1.11"
+    "string-hash": "^1.1.3"
   },
   "pre-commit": [
     "lint",
     "flow",
-    "test"
+    "test",
+    "docs:md"
   ]
 }
