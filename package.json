@@ -1,6 +1,6 @@
 {
   "name": "@thx/messages",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Displays banner messages in the page.",
   "main": "dist/index.js",
   "scripts": {
@@ -77,7 +77,7 @@
     "react": "^15.5.0",
     "react-redux": "^5.0.0",
     "redux": "^3.7.0",
-    "semantic-ui-react": "^0.71.3"
+    "semantic-ui-react": "^0.72.0"
   },
   "dependencies": {
     "immutable": "^3.8.1",
